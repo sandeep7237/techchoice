@@ -1,0 +1,58 @@
+.side-right {
+  display: inline-flex;
+  float: right;
+}
+.nav-link {
+  display: inline-block;
+  flex-direction: initial;
+  padding: 3px;
+  color: white;;
+  display: flex;
+  margin: 0px;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+.nav-link:hover {
+  color: #dcdc0c;
+  cursor: pointer;
+}
+.nav-link:active{
+  color: brown;
+}
+
+i {
+  font-size: 32px;
+}
+span {
+  display: inline-flex;
+  margin: 6px;
+  top: auto;
+}
+@keyframes pulse-grow-on-hover {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.pulse-grow-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  font-size: 32px;
+}
+.pulse-grow-on-hover:hover,
+.pulse-grow-on-hover:focus,
+.pulse-grow-on-hover:active {
+  -webkit-animation-name: pulse-grow-on-hover;
+  animation-name: pulse-grow-on-hover;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
